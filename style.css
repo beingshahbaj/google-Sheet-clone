@@ -304,15 +304,22 @@ select{
   width:40px;
 }
 a{
-  font-size: 12px;
+  font-size: 10px;
+}
+.second-option {
+  cursor: not-allowed !important;
+  display: flex;
+  gap: 3px;
 }
 .main{
   height:auto;
 }
-form{padding-inline: 5px;
+form {
+  flex-grow: 1;
+  padding-inline: 16px;
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+ 
 }
 .secondhead{
 padding: 0px;
