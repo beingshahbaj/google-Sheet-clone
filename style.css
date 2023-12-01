@@ -309,12 +309,26 @@ a{
 .main{
   height:auto;
 }
-form{
+form{padding-inline: 5px;
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 16px;
 }
 .secondhead{
-  padding: 5px 4px;
+padding: 0px;
+margin-inline: 0;
+border-radius: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+ display: none;
 }
 }
