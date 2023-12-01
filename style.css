@@ -290,3 +290,31 @@ main {
   border: none;
  
 }
+
+
+@media screen and ( max-width:780px) {
+  .right-options{
+    display: none;
+  }
+
+  .secondhead .right {
+   display: none;
+}
+select{
+  width:40px;
+}
+a{
+  font-size: 12px;
+}
+.main{
+  height: 70vh;
+}
+form{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.secondhead{
+  padding: 5px 4px;
+}
+}
