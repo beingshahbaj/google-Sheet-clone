@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: 'Unbounded', sans-serif; */
+  /* font-family: Google Sans,Roboto,sans-serif; */
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  padding: 0px 7px;
+  font-weight: 550;
+  color: rgb(88, 88, 88);
+}
+
+li {
+  list-style: none;
+  padding: 2px 5px;
+}
+
+li:hover {
+  border-radius: 5px;
+  padding: 2px 5px;
+  width: fit-content;
+  list-style: none;
+  background-color: #d3e3fd;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  cursor: not-allowed;
+  font-size: 14px;
+  text-decoration: none;
+  color: grey;
+}
+
+.head {
+  padding-top: 8px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.option-list {
+  margin-left: 30px;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.option-list img {
+  width: 35px;
+  object-fit: contain;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-option {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+.second-option {
+  cursor: not-allowed !important;
+  display: flex;
+  gap: 5px;
+}
+
+.right-options {
+  cursor: not-allowed;
+  margin-right: 30px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.material {
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border-radius: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  background-color: rgb(226, 40, 15);
+}
+
+.secondhead {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  display: flex;
+  margin-inline: 20px;
+  align-items: center;
+  height: 40px;
+  background-color: #edf2fa;
+}
+
+.secondhead .right {
+  cursor: not-allowed;
+  padding-right: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+.secondhead .right li {
+  color: grey;
+  font-size: 20px;
+}
+
+select {
+  /* background-color:#d3e3fd; */
+
+  border-radius: 5px;
+  padding: 5px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+option {
+  border: none;
+  outline: 0;
+}
+
+form {
+  cursor: pointer;
+  gap: 15px;
+  display: flex;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="color"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label,
+input[type="color"] + label {
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input:checked + label {
+  background-color: #91b8f8;
+}
+
+main {
+  /* border: 1px solid black; */
+  height: 73vh;
+  /* width: 100vw; */
+  overflow-x: scroll;
+}
+
+#header {
+  background-color: white;
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  z-index: 100;
+  width: fit-content;
+}
+
+.head-cell:first-child {
+  min-width: 50px !important;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  left: 0;
+  top: 0 !important;
+  box-sizing: border-box;
+  border-bottom: 5px solid gainsboro;
+  border-right: 5px solid gainsboro;
+}
+
+.head-cell {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  min-width: 150px;
+  height: 25px;
+  border: 0.5px solid rgb(189, 189, 189);
+}
+
+#body {
+  width: fit-content;
+  /* background-color: rgb(205, 116, 0); */
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+#srn {
+  background-color: white;
+  width: 50px;
+  position: sticky;
+  left: 0;
+}
+
+.srn-cell {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+
+  text-align: center;
+  height: 30px;
+  /* width: 100px; */
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  padding: 2px;
+  font-size: 14px;
+  width: 150px;
+  overflow: hidden;
+
+  /* width: max-content; */
+  height: 30px;
+  border: 1px solid rgb(196, 196, 196);
+  outline: none;
+}
+
+.cell:focus {
+  border: 0.5px solid rgb(0, 30, 255);
+  border-radius: 3px;
+}
+
+.cell-state {
+  margin: 10px 0;
+  gap: 20px;
+  padding-inline: 20px;
+  display: flex;
+}
+
+.cell-state > div {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  border-radius: 4px;
+  width: 40px;
+  padding: 5px;
+  background-color: #91b8f8;
+}
+
+.cell-state input {
+ 
+  background-color: #f8fbff;
+  text-transform: lowercase;
+  padding-inline: 15px;
+  outline: none;
+  border: 0.5px solid rgb(178, 178, 178);
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+#exportData{
+  background:none;
+  border: none;
+ 
+}
