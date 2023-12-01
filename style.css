@@ -307,7 +307,7 @@ a{
   font-size: 12px;
 }
 .main{
-  height: 70vh;
+  height:auto;
 }
 form{
   display: flex;
