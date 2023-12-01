@@ -331,4 +331,14 @@ border-radius: none;
 ::-webkit-scrollbar-track {
  display: none;
 }
+
+.option-list{
+  margin-left: 5px;
+}
+.cell-state {
+  margin: 10px 5px;
+  gap: 7px;
+  padding-inline: 2px;
+  display: flex;
+}
 }
