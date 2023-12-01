@@ -316,7 +316,7 @@ a{
 }
 form {
   flex-grow: 1;
-  /* padding-inline: 16px; */
+  padding-inline: 5px;
   display: flex;
   justify-content: space-between;
  
