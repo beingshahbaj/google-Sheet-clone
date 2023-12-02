@@ -30,10 +30,13 @@ for (let i = 0; i < row; i++) {
         const cell = document.createElement("div");
         cell.className = "cell";
         cell.id = `${String.fromCharCode(65 + j)}${i + 1}`;
+        cell.className = "cell"
         cell.setAttribute("contenteditable", true);
         brow.appendChild(cell);
         cell.addEventListener("focus", onfocuscell);
         cell.addEventListener("input", onchangetext);
+
     }
     cellcontainer.appendChild(brow);
 }
+
